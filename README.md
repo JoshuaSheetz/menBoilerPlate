@@ -7,4 +7,5 @@ This is the boilerplate for the project, shout out to @Mick Feller for getting m
 TO GET STARTED:
 
 1) Run the Gulpfile.js. You will notice the public directory that was previously empty is now filled with directory that have been generated from your Gulpfile. Pretty cool huh?
+
 2) After the Gulpfile has compiled all of the code into the public directory, go to the bin directory and run the www file. This will start your server on port 8000 (it will run app.js, essentially).# menBoilerPlate
