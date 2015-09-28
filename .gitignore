@@ -1,0 +1,42 @@
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules/
+bower_components/
+
+.sass-cache/
+*.css.map
+.idea/
+
+# Compiled source #
+###################
+*.o
+
+# Packages #
+############
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# databases #
+######################
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+._*
+ehthumbs.db
+Thumbs.db

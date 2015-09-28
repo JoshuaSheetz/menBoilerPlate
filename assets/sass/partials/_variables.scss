@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+$font-family-base: 'Raleway', sans-serif;
+
+//Styleguide colors: 1 darker, 2 lighter
+$black1: #000;
+$black2: #111;
+$white1: #EEE;
+$white2: #FFF;
+$darkGray1: #333;
+$darkGray2: #444;
+$lightGray1: #AAA;
+$lightGray2: #CCC;
+
+$orange1: #ff5900;
+$orange2: #ff8602;
+$red1: #CC2513;
+$red1: #cc4a3c;
+$blue1: #273C7C;
+$blue2: #6C97CC;
+
+//Messaging colors
+$successGreenBg: #1CDA7B;
+$failRedBg: #ff2a0c;
+
+//Common dimensions
+$commonPadding: 4px;
+$buttonHeight: $commonPadding*11; //44px
+
+//Time / durations
+$commonSpeed: .2s;
+$fastSpeed: $commonSpeed;
+$medSpeed: $commonSpeed*2;
+$slowSpeed: $commonSpeed*3;

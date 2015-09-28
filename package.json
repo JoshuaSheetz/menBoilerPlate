@@ -1,0 +1,46 @@
+{
+  "name": "menBoilerPlate",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "^5.0.0-alpha.2",
+    "hbs": "*",
+    "express-handlebars": "*",
+    "morgan": "*",
+    "node-sass-middleware": "^0.9.0",
+    "serve-favicon": "*",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.0.42",
+    "monk": "^1.0.1"
+  },
+  "devDependencies": {
+    "event-stream": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "*",
+    "gulp-imagemin": "*",
+    "gulp-jshint": "*",
+    "gulp-livereload": "*",
+    "gulp-load-plugins": "*",
+    "gulp-order": "*",
+    "gulp-rename": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "^1.4.1",
+    "main-bower-files": "*",
+    "mongoose": "*",
+    "gulp-babel": "^5.2.1",
+    "gulp-traceur": "^0.17.1",
+    "gulp-typescript": "^2.9.0",
+    "gulp-plumber": "^1.0.1"
+  }
+}

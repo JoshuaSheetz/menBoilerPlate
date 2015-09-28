@@ -1,0 +1,29 @@
+<div class="bg">
+	{{!--	Bootstrap classes:
+				Phones	(Less than 768px):	col-xs-N
+				Tablets (768px to  992px): 	col-s-N
+				Medium	(992px to 1200px):	col-md-N
+				Large	(1200px and up): 	col-lg-N	--}}
+	<main class="wrapper col-xs-push-2 col-xs-8">
+		<section>
+			<h1>
+				Register
+			</h1>
+			<form action="/register" id="registerForm" method="POST">
+				{{!-- TODO true form validation --}}
+				<input type="email" name="regLoginEmail" placeholder="E-mail / Login" title="Valid, unique e-mail address is required to login" required />
+				<input type="text" name="regAlias" placeholder="Missiles Alias" title="Alias is the name everyone in the Missiles network will know you as" required/>
+				<input type="password" name="regLoginPassword" placeholder="Password" title="Password is required" required/>
+				<input type="password" name="regLoginConfirmPassword" placeholder="Confirm Password" title="Password is required" required/>
+				<input type="text" name="regFirstName" placeholder="First Name" title="First Name required" required/>
+				<input type="text" name="regLastName" placeholder="Last Name" title="Last Name required" required/>
+
+				<div class="col-xs-push-2 col-xs-8">
+					<input type="submit" name="submitRegisterFormBtn" value="Register" class="button button-primary-ghost" />
+				</div>
+
+			</form>
+
+		</section>
+	</main>
+</div>

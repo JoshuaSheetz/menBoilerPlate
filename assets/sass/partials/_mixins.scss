@@ -1,0 +1,18 @@
+//Form element common mixins
+@mixin inputFocusShadow($shadowColor: $white2, $shadowDistance: $commonPadding*2) {
+  box-shadow: 0 0 $shadowDistance $shadowColor;
+  -webkit-transition: box-shadow $fastSpeed ease-in-out;
+  transition: box-shadow $fastSpeed ease-in-out;
+}
+
+@mixin inputHoverShadow($shadowColor: $lightGray1, $shadowDistance: $commonPadding*2) {
+  box-shadow: 0 0 $shadowDistance $shadowColor;
+  -webkit-transition: box-shadow $fastSpeed ease-in-out;
+  transition: box-shadow $fastSpeed ease-in-out;
+}
+
+@mixin inputActiveShadow($shadowColor: $white2, $shadowDistance: $commonPadding*2) {
+  box-shadow: 0 0 $shadowDistance $shadowColor;
+  -webkit-transition: box-shadow $fastSpeed ease-in-out;
+  transition: box-shadow $fastSpeed ease-in-out;
+}

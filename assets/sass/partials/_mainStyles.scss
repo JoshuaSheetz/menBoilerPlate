@@ -1,0 +1,48 @@
+/* Common element styles */
+html,
+body {
+  background-color: $white1;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  h1 {
+	color: $white1;
+  }
+}
+
+/*****************
+ Links
+*****************/
+a {
+  color: $orange1;
+  text-decoration: none;
+
+  &:hover {
+	color: $orange2;
+	text-decoration: none;
+  }
+}
+
+/*****************
+ Messaging
+*****************/
+.msg {
+  border: 1px solid $black1;
+  color: $black1;
+  margin-bottom: $commonPadding*3;
+  text-align: center;
+
+  &.success {
+	background-color: $successGreenBg;
+  }
+
+  &.fail {
+	background-color: $failRedBg;
+  }
+
+}

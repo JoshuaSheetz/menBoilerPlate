@@ -1,0 +1,155 @@
+/*
+Common BEM Styles
+Block (Main parent block)
+Element (Child placed inside of block, underscore _ )
+Modifier (Color, state, size (big small) things unrelated to the module, uses dash - )
+*/
+
+//input types: http://html5doctor.com/html5-forms-input-types/
+//BUTTONS DEFAULT NOT BEM
+input[type="submit"],
+button,
+select,
+.button {
+  border-radius: $commonPadding*2;
+  display: block;
+  height: $buttonHeight;
+  font-size: 16px;
+  margin: $commonPadding*2 auto;
+  outline: none;
+  text-align: center;
+  -webkit-transition: box-shadow $fastSpeed ease-in-out;
+  transition: box-shadow $fastSpeed ease-in-out;
+  width: 100%;
+
+  &:hover {
+	text-decoration: none;
+  }
+}
+
+//Until find bettwe way to next this not using root or whatever :-p
+a.button {
+  line-height: 44px;
+}
+
+//BEM STYLES
+//Buttons (usually a links)
+.button {
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+	text-decoration: none;
+  }
+
+  &.smTxt {
+	font-size: 14px;
+  }
+
+  //Button colors
+  &-orange,
+  &-primary {
+	background-color: $orange2;
+	color: $black2;
+	transition: background-color $medSpeed ease-out;
+	-webkit-transition: background-color $medSpeed ease-out;
+
+	&:hover {
+	  background-color: $orange1;
+	  transition: background-color $medSpeed ease-out;
+	  -webkit-transition: background-color $medSpeed ease-out;
+	}
+
+	//Ghost primary btn
+	&-ghost {
+	  background-color: rgba(255, 255, 255, 0);
+	  border: 2px solid $orange2;
+	  color: $orange2;
+	  font-weight: bold;
+	  transition: color $medSpeed ease-out, border-color $medSpeed ease-out, background-color $medSpeed ease-out;
+	  -webkit-transition: color $medSpeed ease-out, border-color $medSpeed ease-out, background-color $medSpeed ease-out;
+
+	  &:hover {
+		border: 2px solid $orange1;
+		color: $orange1;
+		background-color: rgba(255, 255, 255, 0.1);
+		transition: color $medSpeed ease-out, border-color $medSpeed ease-out, background-color $medSpeed ease-out;
+		-webkit-transition: color $medSpeed ease-out, border-color $medSpeed ease-out, background-color $medSpeed ease-out;
+	  }
+
+	  &:active {
+		background-color: rgba(255, 255, 255, 0);
+		border: 2px solid $orange2;
+		color: $orange2;
+		background-color: rgba(255, 255, 255, 0.3);
+		transition: color $fastSpeed ease-out, border-color $fastSpeed ease-out, background-color $fastSpeed ease-out;
+		-webkit-transition: color $fastSpeed ease-out, border-color $fastSpeed ease-out, background-color $fastSpeed ease-out;
+	  }
+	}
+  }
+
+  &-gray,
+  &-secondary {
+	background-color: $lightGray2;
+	color: $darkGray1;
+	transition: background-color $medSpeed ease-out;
+	-webkit-transition: background-color $medSpeed ease-out;
+
+	&:hover {
+	  background-color: $lightGray1;
+	  transition: background-color $medSpeed ease-out;
+	  -webkit-transition: background-color $medSpeed ease-out;
+	}
+
+	//Ghost secondary btn
+	&-ghost {
+	  background-color: rgba(255, 255, 255, 0);
+	  border: 2px solid $lightGray2;
+	  color: $lightGray2;
+	  font-weight: bold;
+	  transition: color $medSpeed ease-out, border-color $medSpeed ease-out, background-color $medSpeed ease-out;
+	  -webkit-transition: color $medSpeed ease-out, border-color $medSpeed ease-out, background-color $medSpeed ease-out;
+
+	  &:hover {
+		border: 2px solid $lightGray1;
+		color: $lightGray1;
+		background-color: rgba(255, 255, 255, 0.1);
+		transition: color $medSpeed ease-out, border-color $medSpeed ease-out, background-color $medSpeed ease-out;
+		-webkit-transition: color $medSpeed ease-out, border-color $medSpeed ease-out, background-color $medSpeed ease-out;
+	  }
+
+	  &:active {
+		background-color: rgba(255, 255, 255, 0);
+		border: 2px solid $lightGray2;
+		color: $lightGray2;
+		background-color: rgba(255, 255, 255, 0.3);
+		transition: color $fastSpeed ease-out, border-color $fastSpeed ease-out, background-color $fastSpeed ease-out;
+		-webkit-transition: color $fastSpeed ease-out, border-color $fastSpeed ease-out, background-color $fastSpeed ease-out;
+	  }
+	}
+  }
+
+  //Button states
+  &-default {
+
+  }
+}
+
+//TEXT FIELDS: Add some css effects to text fields that we don't want on buttons
+textarea,
+input[type]:not([type="button"]):not([type="submit"]) {
+  background-color: $white2;
+  border: none;
+  color: $black1;
+  margin-bottom: $commonPadding*3;
+  outline: none;
+  padding: $commonPadding*2;
+  -webkit-transition: box-shadow $fastSpeed ease-in-out;
+  transition: box-shadow $fastSpeed ease-in-out;
+  width: 100%;
+
+  &:focus {
+	@include inputFocusShadow($orange2);
+  }
+}

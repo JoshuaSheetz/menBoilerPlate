@@ -1,0 +1,35 @@
+<div class="bg">
+	{{!--	Bootstrap classes:
+				Phones	(Less than 768px):	col-xs-N
+				Tablets (768px to  992px): 	col-s-N
+				Medium	(992px to 1200px):	col-md-N
+				Large	(1200px and up): 	col-lg-N	--}}
+	<main class="wrapper col-xs-push-2 col-xs-8">
+		<section>
+			<h1>
+				Login
+			</h1>
+
+			{{!-- Register success/fail msg
+			{{#if registerMsg}}
+				<div class="msg {{registerMsgCode}}">
+					{{registerMsg}}
+				</div>
+			{{/if}} --}}
+
+			<form action="login" id="loginForm" method="post">
+				<input type="email" name="loginEmail" placeholder="E-mail / Login"/>
+				<input type="password" name="loginPassword" placeholder="Password"/>
+
+				<div class="col-xs-push-2 col-xs-4">
+					<input type="submit" name="submitLoginFormBtn" value="Login" class="button button-primary-ghost" />
+				</div>
+				<div class="col-xs-push-2 col-xs-4">
+					<a id="registerBtn" href="/register" class="button button-secondary-ghost">
+						Register
+					</a>
+				</div>
+			</form>
+		</section>
+	</main>
+</div>

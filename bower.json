@@ -1,0 +1,24 @@
+{
+  "name": "NodeJS",
+  "version": "0.0.1",
+  "authors": [
+    "Anon"
+  ],
+  "description": "NodeJS Project",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.*",
+    "bootstrap-sass-official": "~3.3.5",
+    "bootstrap": "*",
+    "fontawesome": "~4.4.0",
+    "handlebars": "*"
+  }
+}
